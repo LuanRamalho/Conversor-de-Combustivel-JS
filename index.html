@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Combustível</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Conversor de Combustível</h1>
+
+    <div class="container">
+        <label for="valor">Valor a Converter:</label>
+        <input type="number" id="valor" step="0.01">
+
+        <div class="unidades">
+            <label for="unidadeOrigem">Unidade de Origem:</label>
+            <select id="unidadeOrigem">
+                <option value="litro">Litro</option>
+                <option value="galao">Galão Americano</option>
+            </select>
+        </div>
+
+        <div class="unidades">
+            <label for="unidadeDestino">Unidade de Destino:</label>
+            <select id="unidadeDestino">
+                <option value="galao">Galão Americano</option>
+                <option value="litro">Litro</option>
+            </select>
+        </div>
+
+        <button onclick="converter()">Converter</button>
+
+        <div id="resultado" class="resultado">
+            <p>Resultado: 0</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
